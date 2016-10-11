@@ -36,7 +36,7 @@ public class TestDemo extends UiAutomatorTestCase {
         languageAndInputItem.clickAndWaitForNewWindow(); 
        
        
-        //找到“English”的可点击项（因为当前是英文环境） 
+        //找到“语言”的可点击项
         UiObject setLanItem = new UiObject(new UiSelector().text("语言")); 
         setLanItem.clickAndWaitForNewWindow(); 
        
@@ -45,7 +45,7 @@ public class TestDemo extends UiAutomatorTestCase {
         //System.out.println("setLanItem-->" + setLanItem.getPackageName()); 
        
        
-        //由于无法识别中文，因此我们这里使用坐标去选择“简体中文”项 
+        //可以识别中文
         getUiDevice().click(380, 140); 
            
         //点击返回键，回到待机界面 
